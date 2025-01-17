@@ -1,6 +1,6 @@
 # Azure App Secrets Management Scripts (MSGraph)
 
-This repository contains two Python scripts for managing Azure App Secrets using the Microsoft Graph API:
+This repository contains two Python scripts for managing Azure App Secrets and Python:
 
 * **delete_app_secrets.py:** Deletes existing app secrets from an Azure App Registration.
 * **add_app_secrets.py:** Adds new app secrets to an Azure App Registration.
