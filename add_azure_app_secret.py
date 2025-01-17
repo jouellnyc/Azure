@@ -1,7 +1,7 @@
+from msgraph import GraphServiceClient
+from msgraph.generated.applications.item.add_password.add_password_post_request_body import AddPasswordPostRequestBody
+from msgraph.generated.models.password_credential import PasswordCredential
 
-from msgraph_beta import GraphServiceClient
-from msgraph_beta.generated.applications.item.add_password.add_password_post_request_body import AddPasswordPostRequestBody
-from msgraph_beta.generated.models.password_credential import PasswordCredential
 from azure.identity import ClientSecretCredential
 from creds import tenant_id, client_id, client_secret
 
@@ -40,4 +40,3 @@ async def rotate_secret():
 if __name__ == "__main__":
     import asyncio
     asyncio.run(rotate_secret())
-
