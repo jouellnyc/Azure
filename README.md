@@ -10,5 +10,8 @@ This repository contains two Python scripts for managing Azure App Secrets and P
 * **Python:** Install Python 3.x.
 * **msgraph-sdk:** Install the Microsoft Graph SDK and Azure Identity using pip:
    ```bash
+
+   python -m venv azureenv
+
    pip install msgraph-sdk
    pip install azure-identity
