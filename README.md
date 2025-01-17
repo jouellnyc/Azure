@@ -15,3 +15,11 @@ This repository contains two Python scripts for managing Azure App Secrets and P
 
    pip install msgraph-sdk
    pip install azure-identity
+
+These values are either gotten from a file (dev setup) or online Vault and for reference.
+
+```
+from creds import tenant_id, client_id, client_secret
+```
+
+
