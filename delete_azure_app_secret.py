@@ -1,5 +1,4 @@
 from azure.identity import ClientSecretCredential
-
 from msgraph import GraphServiceClient
 from msgraph.generated.applications.item.remove_password.remove_password_post_request_body import RemovePasswordPostRequestBody
 
