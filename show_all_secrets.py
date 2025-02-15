@@ -4,6 +4,15 @@ from azure.identity import ClientSecretCredential
 from creds import tenant_id, client_id, client_secret
 
 async def show_secrets():
+    """
+    Retrieves and displays the password credentials (secrets) for a given Azure AD application.
+
+    This function uses the Microsoft Graph API to fetch the secret information.  It requires
+    credentials to be provided via environment variables or a separate 'creds.py' file (as in this example).
+
+    Raises:
+        Exception: If an error occurs during the process, it will be caught and the error message printed.
+    """
     try:
         credential = ClientSecretCredential(
             tenant_id=tenant_id,
