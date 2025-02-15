@@ -8,6 +8,13 @@ from creds import tenant_id, client_id, client_secret
 
 async def delete_secret():
 
+    """
+    Asynchronously deletes a secret (password) from an Azure AD application using the Microsoft Graph API.
+
+    This function authenticates using a client secret and removes the password associated with a specific key ID
+    from the specified application.  It handles potential exceptions during the process.
+    """
+
     try:
 
         credential = ClientSecretCredential(
